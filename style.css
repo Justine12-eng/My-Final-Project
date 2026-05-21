@@ -1,0 +1,228 @@
+/* Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Smooth scroll*/
+html {
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/*Navigation*/
+header{
+    background-color: #008080;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    height: 150px;
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    lifestyle:none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+
+/*Hero section*/
+.hero{
+    height: 100vh;
+
+    background-image: url("images/care.jpg");
+
+    background-size: cover;
+    background-position: center; background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+
+.hero-text h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/*Button*/
+.btn{
+    background-color: #00b894;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #019875;
+}
+
+/*About*/
+.about{
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.about h2{
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+.about p{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/*Services*/
+.services{
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.services h2{
+    color: #008080;
+    margin-bottom: 30px;
+}
+
+/*Cards*/
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    color: #008080;
+    margin-bottom: 15px;
+}
+
+/*Contacts*/
+.contact{
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contact h2{
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 60%;
+    margin: auto;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+}
+
+form textarea{
+    height: 120px;
+}
+
+form button{
+    background-color: #008080;
+    color: white;
+
+    border: none;
+    padding: 12px 20px;
+
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #006666;
+}
+
+/*Footer*/
+footer{
+    background-color: #008080;
+    color: white;
+
+    text-align: center;
+    padding: 15px;
+}
+
+/*Responsive*/
+@media(max-width:768px){
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top: 10px;
+    }
+
+    .hero-text h2{
+        font-size: 35px;
+    }
+
+    .about p{
+        width: 95%;
+    }
+
+    form{
+        width: 90%;
+    }
+}
